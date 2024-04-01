@@ -1,9 +1,28 @@
 import React from "react";
-
+import { Home } from "./pages";
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
 const App = () => {
   return (
-    <div className=" bg-slate-500">
-      <h1 className=" text-blue-500">Harsh</h1>
+    <div
+      className="relative sm :- 8 p-4 [bg-
+      [#13131a] min-h-screen flex flex-row"
+    >
+      <div
+        className="sm:flex hidden mr-10
+      relative"
+      >
+        <Sidebar />
+      </div>
+
+      <div
+        className="flex-1 max-sm:w-full max-w-
+      [1280px] mx-auto sm:pr-5"
+      >
+        <Navbar />
+        
+      </div>
     </div>
   );
 };
