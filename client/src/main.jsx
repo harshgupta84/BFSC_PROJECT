@@ -11,7 +11,7 @@ import './index.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <ThirdwebProvider desiredChainId={ChainId.sepolia}> 
+  <ThirdwebProvider desiredChainId={ChainId.Sepolia}> 
     <Router>
       <StateContextProvider>
         <App />
